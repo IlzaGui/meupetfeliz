@@ -5,42 +5,96 @@
 <title>Achadinhos Online</title>
 
 <style>
+
 body{
-font-family: Arial;
+font-family: Arial, sans-serif;
 background:#f5f5f5;
+margin:0;
+}
+
+header{
+background:#ffe600;
+padding:20px;
 text-align:center;
+}
+
+h1{
+margin:0;
+}
+
+.container{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+padding:20px;
 }
 
 .produto{
 background:white;
-margin:20px;
-padding:20px;
-border-radius:10px;
+width:250px;
+padding:15px;
+border-radius:12px;
 box-shadow:0 0 10px rgba(0,0,0,0.1);
+transition:0.3s;
 }
 
-a{
+.produto:hover{
+transform:scale(1.05);
+}
+
+.produto img{
+width:100%;
+border-radius:10px;
+}
+
+.produto h2{
+font-size:18px;
+}
+
+.botao{
+display:inline-block;
 background:#ffe600;
-padding:10px 20px;
+padding:10px;
+margin-top:10px;
 text-decoration:none;
 color:black;
 font-weight:bold;
-border-radius:5px;
+border-radius:6px;
 }
+
 </style>
 </head>
 
 <body>
 
+<header>
 <h1>🔥 Achadinhos do Mercado Livre</h1>
 <p>Ofertas selecionadas todos os dias</p>
+</header>
 
+<div class="container">
+
+<!-- PRODUTO 1 -->
 <div class="produto">
-<h2>Mordedores</h2>
-<p>Kit 12 Brinquedos Mordedor Pet Cachorro Filhotes Porte Médio.</p>
-<a href="https://meli.la/2hqdZJ3" target="_blanck">
-Ver no Mercado Livre
+<img src="LINK-IMAGEM-1" alt="Mordedores">
+<h2>Mordedores Pet</h2>
+<p>Kit 12 brinquedos mordedor para cães filhotes.</p>
+<a class="botao" href="https://meli.la/2hqdZJ3" target="_blank">
+Ver oferta
 </a>
+</div>
+
+<!-- PRODUTO 2 -->
+<div class="produto">
+<img src="https://http2.mlstatic.com/D_NQ_NP_2X_893795-MLB100009960802_122025-F.webp" alt="Produto">
+<h2>Nome do Produto</h2>
+<p>Mordedores Naturais.</p>
+<a class="botao" href="https://meli.la/1x77NpR">
+Ver oferta
+</a>
+</div>
+
 </div>
 
 </body>
