@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html>
 <head>
 <meta charset="UTF-8">
 <title>Achadinhos Online</title>
@@ -33,6 +31,51 @@ header{
 background:#ffe600;
 padding:20px;
 text-align:center;
+}
+
+h1{
+margin:0;
+}
+
+.container{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+padding:20px;
+}
+
+.produto{
+background:white;
+width:250px;
+padding:15px;
+border-radius:12px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.produto:hover{
+transform:scale(1.05);
+}
+
+.produto img{
+width:100%;
+border-radius:10px;
+}
+
+.produto h2{
+font-size:18px;
+}
+
+.botao{
+display:inline-block;
+background:#ffe600;
+padding:10px;
+margin-top:10px;
+text-decoration:none;
+color:black;
+font-weight:bold;
+border-radius:6px;
 }
 
 </style>
@@ -106,11 +149,6 @@ border-radius:6px;
 </head>
 
 <body>
-
-<header>
-<h1>🔥 Achadinhos do Mercado Livre</h1>
-<p>Ofertas selecionadas todos os dias</p>
-</header>
 
 <div class="container">
 
